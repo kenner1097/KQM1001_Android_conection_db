@@ -10,6 +10,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_marginLeft="87dp"
+        android:layout_marginTop="0dp"
         android:text="Dni:" />
 
     <EditText
@@ -19,6 +21,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
         android:layout_alignParentLeft="true"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="4dp"
         android:ems="10">
 
         <requestFocus />
@@ -28,86 +32,135 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_below="@+id/editText1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="-2dp"
         android:text="Nombre y apellido:" />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="87dp"
+        android:layout_marginTop="2dp"
         android:ems="10" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_below="@+id/editText2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="-2dp"
         android:text="Nombre del colegio:" />
 
     <EditText
         android:id="@+id/editText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="6dp"
         android:ems="10" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_below="@+id/editText3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="8dp"
         android:text="Número de mesa:" />
 
     <EditText
         android:id="@+id/editText4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="9dp"
         android:ems="10" />
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="99dp"
+        android:layout_height="46dp"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/editText4"
-        android:onClick="alta"
-        android:text="Alta" />
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="356dp"
+        android:onClick="agregar"
+        android:text="Agregar" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:layout_width="117dp"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button1"
-        android:layout_alignBottom="@+id/button1"
-        android:layout_toRightOf="@+id/button1"
-        android:onClick="consulta"
-        android:text="Consulta por Dni" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="214dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="281dp"
+        android:onClick="consultar"
+        android:text="Consulta por DNI" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="99dp"
+        android:layout_height="46dp"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/button1"
-        android:onClick="baja"
-        android:text="Baja" />
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="159dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="357dp"
+        android:onClick="eliminar"
+        android:text="Eliminar" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button3"
-        android:layout_alignBottom="@+id/button3"
-        android:layout_alignLeft="@+id/button2"
-        android:onClick="modificacion"
-        android:text="Modificación" />
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginLeft="78dp"
+        android:layout_marginBottom="278dp"
+        android:onClick="modificar"
+        android:text="Modificar" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="99dp"
+        android:layout_height="46dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="278dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginBottom="357dp"
+        android:onClick="limpiar"
+        android:text="Limpiar" />
 
 </RelativeLayout>

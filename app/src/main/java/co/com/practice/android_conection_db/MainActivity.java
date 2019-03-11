@@ -1,6 +1,5 @@
 package co.com.practice.android_conection_db;
 
-//import android.app.Activity;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 //import android.support.v7.app.AppCompatActivity;
@@ -35,7 +34,7 @@ public class MainActivity extends Activity {
         return true;
     }
 
-    public void alta(View v) {
+    public void agregar(View v) {
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,
                 "administracion", null, 1);
         SQLiteDatabase bd = admin.getWritableDatabase();
@@ -58,7 +57,7 @@ public class MainActivity extends Activity {
                 Toast.LENGTH_SHORT).show();
     }
 
-    public void consulta(View v) {
+    public void consultar(View v) {
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,
                 "administracion", null, 1);
         SQLiteDatabase bd = admin.getWritableDatabase();
@@ -76,7 +75,7 @@ public class MainActivity extends Activity {
 
     }
 
-    public void baja(View v) {
+    public void eliminar(View v) {
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,
                 "administracion", null, 1);
         SQLiteDatabase bd = admin.getWritableDatabase();
@@ -95,7 +94,7 @@ public class MainActivity extends Activity {
                     Toast.LENGTH_SHORT).show();
     }
 
-    public void modificacion(View v) {
+    public void modificar(View v) {
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,
                 "administracion", null, 1);
         SQLiteDatabase bd = admin.getWritableDatabase();
@@ -115,6 +114,14 @@ public class MainActivity extends Activity {
         else
             Toast.makeText(this, "no existe una persona con dicho documento",
                     Toast.LENGTH_SHORT).show();
+    }
+    public void limpiar(View v) {
+        et1.setText("");
+        et2.setText("");
+        et3.setText("");
+        et4.setText("");
+        Toast.makeText(this, "se limpian los datos exitosamente", Toast.LENGTH_SHORT)
+            .show();
     }
 
 }
